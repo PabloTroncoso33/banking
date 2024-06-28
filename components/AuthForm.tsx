@@ -65,7 +65,7 @@ const AuthForm = ({ type }: { type: string }) => {
 
     } catch (error) {
       console.log(error)
-    } finally{
+    } finally {
       setIsLoading(false)
     }
   }
@@ -117,7 +117,7 @@ const AuthForm = ({ type }: { type: string }) => {
                   <CustomInput control={form.control} name='address1' label="Address" placeholder='Enter your specific address' />
                   <CustomInput control={form.control} name='city' label="City" placeholder='Enter your city' />
                   <div className="flex gap-4">
-                    <CustomInput control={form.control} name='state' label="State" placeholder='Example:NY' />
+                    <CustomInput control={form.control} name='state' label="State" placeholder='Example: NY' />
                     <CustomInput control={form.control} name='postalCode' label="Postal Code" placeholder='Example: 11101' />
                   </div>
                   <div className="flex gap-4">
@@ -135,7 +135,7 @@ const AuthForm = ({ type }: { type: string }) => {
                 <Button type="submit" disabled={isLoading} className='form-btn'>
                   {isLoading ? (
                     <>
-                    <Loader2 size={20} className="animate-spin" /> &nbsp;Loading...
+                      <Loader2 size={20} className="animate-spin" /> &nbsp;Loading...
                     </>
                   ) : type === 'sign-in'
                     ? 'Sign In' : 'Sign Up'}
